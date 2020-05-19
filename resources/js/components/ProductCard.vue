@@ -7,6 +7,7 @@
                 <p class="card-text">{{ product.description }}</p>
                 <p class="card-text">Rs. {{ product.price }}/-</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
+                <button @click="$emit('add-to-cart', product)">Add to cart</button>
             </div>
         </div>
     </div>
